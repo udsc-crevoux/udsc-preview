@@ -1,0 +1,78 @@
+############# English navigation ##############
+
+# Main menu configuration
+# main menu
+[[main]]
+name = "L'association"
+url = ""
+weight = 1
+# Submenu for L'association
+[[main]]
+parent = "L'association"
+name = "Son Objet"
+url = "l-association/#son-objet"
+weight = 1
+[[main]]
+parent = "L'association"
+name = "Le mot du Président"
+url = "l-association/#le-mot-du-president"
+weight = 2
+[[main]]
+parent = "L'association"
+name = "L’équipe d’animation de l’UDSC"
+url = "l-association/#lequipe-danimation-de-ludsc"
+weight = 3
+
+[[main]]
+name = "La commune de Crevoux"
+url = "commune-crevoux/"
+weight = 2
+
+[[main]]
+name = "Nos actions"
+url = ""
+weight = 3
+# Submenu for Nos actions
+[[main]]
+parent = "Nos actions"
+name = "La pétition"
+url = "la-petition"
+weight = 1
+[[main]]
+parent = "Nos actions"
+name = "Réunions"
+url = "reunions"
+weight = 2
+
+[[main]]
+name = "Actualités"
+url = ""
+# Submenu for Actualités
+weight = 4
+[[main]]
+parent = "Actualités"
+name = "Agenda"
+url = "agenda/"
+weight = 1
+[[main]]
+parent = "Actualités"
+name = "La presse parle de nous"
+url = "presse/"
+weight = 2
+
+[[main]]
+name = "Nous soutenir"
+url = "nous-soutenir/"
+weight = 5
+
+
+# footer menu
+[[footer]]
+name = "A propos"
+url = "l-association/#son-objet"
+weight = 1
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 2

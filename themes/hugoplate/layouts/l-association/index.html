@@ -1,0 +1,59 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <div id="son-objet"></div>
+  <br /><br /><br /><br />
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          {{ $sonobjet := .Site.GetPage "l-association/sonobjet.md" }}
+          {{ $membres := .Site.GetPage "l-association/membres.md" }}
+          {{ $mot := .Site.GetPage "l-association/mot.md" }}
+          <div class="content">{{ .Content }}</div>
+          <div class="text-center"><h2>{{ $sonobjet.Title }}</h2></div>
+          <div class="content">{{ $sonobjet.Content }}</div>
+          {{ with $sonobjet.Params.button }}
+            <div class="text-center">
+              <a
+              class="btn btn-primary mt-4"
+              href="{{ .link | absURL }}"
+              {{ if strings.HasPrefix .link `http` }}
+                target="_blank" rel="noopener"
+              {{ end }}>
+              {{ .label }}
+              <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            </div>
+          {{ end }}
+          <br />
+          <br />
+          <br />
+          <br />
+          <div id="le-mot-du-president"></div>
+          <br /><br /><br /><br />
+          <div class="text-center"><h2>{{ $mot.Title }}</h2></div>
+          <div class="content">{{ $mot.Content }}</div>
+          <div id="lequipe-danimation-de-ludsc"></div>
+          <br /><br /><br /><br />
+          <div class="text-center"><h2>{{ $membres.Title }}</h2></div>
+          <br />
+          <h3 class="text-center">{{ $membres.Params.subtitle }}</h3>
+          <br /><br />
+          <div class="content">{{ $membres.Content }}</div>
+          <div class="container">
+            <div class="row">
+              {{ $authors := .Site.GetPage "/l-association/authors" }}
+              {{ range $authors.Pages }}
+                <div class="md:col-6 lg:col-6 mb-14">
+                  {{ partial "components/author-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

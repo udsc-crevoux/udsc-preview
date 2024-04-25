@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-7 text-center">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "450x225") }}
+          <h2 class="h3 mb-6">{{ .Title }}</h2>
+          <div class="content">{{ .Content }}</div>
+          {{ with .Params.button }}
+            <div class="text-center">
+              <a
+                class="btn btn-primary mt-4 mb-10"
+                href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link `http` }}
+                  target="_blank" rel="noopener"
+                {{ end }}>
+                {{ .label }}
+                <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            </div>
+          {{ end }}
+          {{ $gallery := .Site.GetPage "commune-crevoux/gallery.md" }}
+          <div class="content">{{ $gallery.Content }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
