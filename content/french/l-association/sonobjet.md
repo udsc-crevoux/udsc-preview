@@ -8,7 +8,11 @@ button:
 draft: false
 ---
 
-**L’UDSC : l’Union pour le Dynamisme de la Station de Crévoux** est née le 20 janvier 2024 suite au succès de la pétition « Inquiets pour la station de ski de Crévoux » publiée le 16 janvier 2024 (lien vers la rubrique dédiée) et plébiscitée par près de **6 000 personnes**.
+plusieurs changements 
+
+**L’UDSC : l’Union pour le Dynamisme de la Station de Crévoux** est née le 20 janvier 2024 suite au succès de la pétition « Inquiets pour la station de ski de Crévoux » publiée le 16 janvier 2024 (lien vers la rubrique dédiée) et plébiscitée par près de **3 000 personnes**.
+
+un paragraphe.
 
 Forts de cette inquiétude partagée concernant l’avenir de la station un collectif de 6 Crévolins d’adoption et de cœur ont souhaité aller plus loin en créant l’UDSC une association déclarée selon la loi de 1901.
 

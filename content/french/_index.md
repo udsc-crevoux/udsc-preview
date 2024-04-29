@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "UDSC <br>l’Union pour le Dynamisme de la Station de Crévoux"
+  title: "UDSC <br>l’Union pour le Dynamisme de la Station de Crévoux: PREVIEW"
   content: "Une mobilisation citoyenne pour contribuer à la sauvegarde et au renouveau du dynamisme de la station, dans le respect de son environnement naturel actuel qui fait sa spécificité."
   image: "/images/photoHP.png"
   button:
